@@ -37,15 +37,15 @@ Follow the on‑screen instructions to place your mark (O or X). The game will n
 ---
 
 ## 🧩 Main Functions
-`MostrarTablero(tablero)` → Displays the board.
+`show_board(board)` → Displays the board.
 
-`SiguienteMovimiento(tablero)` → Handles human input.
+`next_move(board)` → Handles human input.
 
-`LugaresVacios(tablero)` → Returns empty positions.
+`empty_squares(board)` → Returns empty positions.
 
-`Ganador(tablero, simbolo)` → Checks if a player has won.
+`winner(board, symbol)` → Checks if a player has won.
 
-`MovimientoMaquina(tablero)` → Generates machine moves.
+`machine_move(board)` → Generates machine moves.
 
 ---
 
