@@ -1,76 +1,80 @@
-# Ta-Te-Ti
+# 🎮 Ta‑Te‑Ti (Tic‑Tac‑Toe)
 
-**Ta-Te-Ti** is an implementation of the classic "Tic-Tac-Toe" game developed in Python.
+**Ta‑Te‑Ti** is a simple console implementation of the classic Tic‑Tac‑Toe game, developed in **Python**.  
+Play against the machine or a friend, with win/draw detection and restartable matches.
 
-## Description
+---
 
-Ta-Te-Ti is a console game where two players take turns placing their marks on a 3x3 grid, aiming to align three of their marks in a row, column, or diagonal.
-
-## Features
-
-- Two-player game.
-- Command-line interface.
+## 🚀 Features
+- Two‑player mode (human vs machine).
+- Command‑line interface.
 - Win and draw detection.
-- Restartable game.
+- Restartable game flow.
 
-## Technologies and Tools
+---
 
-- **Python**: Programming language used to develop the game.
+## 🛠 Tech Stack
+- **Python 3** (no external dependencies).
 
-## Installation
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/m4lcom/ta-te-ti.git
+## 📦 Installation
+Clone the repository and navigate to the project folder:
 
-    Navigate to the project directory:
+```bash
+git clone https://github.com/m4lcom/ta-te-ti.git
+cd ta-te-ti
+```
+---
 
-    bash
+## ▶️ Usage
+Run the main script:
 
-    cd ta-te-ti
-
-    No additional dependencies are required to run this project. Make sure you have Python installed on your system.
-
-Usage
-
-To play, run the main script:
-
-bash
-
+```bash
 python ta_te_ti.py
+```
+Follow the on‑screen instructions to place your mark (O or X). The game will notify you when someone wins or if the match ends in a draw.
+---
 
-Follow the on-screen instructions to play. The game will prompt you to enter coordinates to place your mark and will notify you when someone wins or if the game ends in a draw.
-Code
-Main Functions
+## 🧩 Main Functions
+`MostrarTablero(tablero)` → Displays the board.
 
-    MostrarTablero(tablero): Displays the current state of the board in the console.
+`SiguienteMovimiento(tablero)` → Handles human input.
 
-    SiguienteMovimiento(tablero): Allows the human player to enter their move and updates the board.
+`LugaresVacios(tablero)` → Returns empty positions.
 
-    LugaresVacios(tablero): Returns a list of empty positions on the board.
+`Ganador(tablero, simbolo)` → Checks if a player has won.
 
-    Ganador(tablero, simbolo): Determines if the player with the given symbol (O or X) has won the game.
+`MovimientoMaquina(tablero)` → Generates machine moves.
 
-    MovimientoMaquina(tablero): Makes an automatic move for the machine (player X).
+---
 
-Game Flow
+## 🔄 Game Flow
+The board starts numbered 1–9.
 
-The game starts by creating a 3x3 board with numbers from 1 to 9. The machine makes its first move in the center. Turns alternate between the human player and the machine. The game ends when someone wins or the board is filled (draw).
-Contributing
+The machine (X) plays first in the center.
 
-If you want to contribute to this project, please follow these steps:
+Turns alternate until someone wins or the board is full (draw).
 
-    Fork the repository.
-    Create a new branch for your changes.
-    Make your modifications and commit them.
-    Submit a pull request with a description of your changes.
+---
 
-License
+## 🤝 Contributing
+Fork the repo
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
-Contact
+Create a branch (feature/my-change)
 
-If you have any questions, feel free to contact me:
+Commit your changes
 
-    Email: malcom.foca@gmail.com
-    GitHub: m4lcom
+Open a Pull Request
+
+---
+
+## 📜 License
+MIT License – see LICENSE.
+
+---
+
+## 📬 Contact
+[Email](malcom.foca@gmail.com)
+
+[Linkedin](https://www.linkedin.com/in/malcom-foca/)
